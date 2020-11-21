@@ -10,19 +10,19 @@
 
 #create {
 	position: fixed;
-	right: 0.5rem;
-	bottom: 8rem;
+	right: 1rem;
+	bottom: 6rem;
 }
 #file {
 	position: fixed;
-	right: 0.5rem;
-	bottom: 6rem;
+	right: 1rem;
+	bottom: 4rem;
 }
 
 .round {
 	position: fixed;
-	right: 0.5rem;
-	bottom: 4rem;
+	right: 1rem;
+	bottom: 1rem;
 	background-color: #32CD32;
 
 	height: 2rem;
