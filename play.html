@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tango</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<script type="text/javascript" src="./MersenneTwister19937class.js"></script>
+	<script type="text/javascript" src="./rand.js"></script>
+	<script type="text/javascript" src="./data.js"></script>
+	<script type="text/javascript" src="./play.js"></script>
+</head>
+<body>
+	<noscript>javascriptの使用を許可して下さい</noscript>
+	<output type="text" id="title"></output><br>
+<div id="div1">
+	<span>表示する列</span><input type="number" id="column" value="1" min="1"><br>
+	<select id="select">
+		<option>正順</option>
+		<option>逆順</option>
+		<option>ランダム順</option>
+	</select><br>
+	<input type="button" id="start" value="開始"><br>
+</div>
+<div id="div2">
+	<output id="output1"></output><br>
+	<output id="output2"></output><br>
+	<input type="button" id="next" value="次" style="font-size: 2.0rem; width: 100%; position: fixed; left: 0; bottom: 0;">
+	<input type="button" value="空" style="font-size: 2.0rem; width: 100%; left: 0; bottom: 0; visibility: hidden;">
+</div>
+</body>
+</html>

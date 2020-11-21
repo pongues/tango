@@ -1,0 +1,45 @@
+#list > * {
+	list-style-type: none;
+	border-top: ridge thin black;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+#list > *:nth-child(2n) {
+	background-color: #E0E0E0;
+}
+
+#create {
+	position: fixed;
+	right: 0.5rem;
+	bottom: 8rem;
+}
+#file {
+	position: fixed;
+	right: 0.5rem;
+	bottom: 6rem;
+}
+
+.round {
+	position: fixed;
+	right: 0.5rem;
+	bottom: 4rem;
+	background-color: #32CD32;
+
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.switch {
+	display: none;
+}
+.switch + * {
+	display: none;
+}
+.switch:checked + * {
+	display: block;
+}

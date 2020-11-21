@@ -1,0 +1,20 @@
+html{
+	font-size: 150%;
+}
+
+input, output, select, span, table{
+	font-size: 1.0rem;
+}
+
+tr{
+	vertical-align: baseline;
+}
+
+.small{
+	font-size: 0.8rem;
+}
+
+.scroll{
+	overflow-x: scroll;
+	width: 100%;
+}

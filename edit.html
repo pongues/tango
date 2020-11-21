@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tango</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<script type="text/javascript" src="./data.js"></script>
+	<script type="text/javascript" src="./edit.js"></script>
+</head>
+<body>
+	<noscript>javascriptの使用を許可して下さい</noscript>
+	<input type="button" id="save" value="保存" style="width: 50%; position: absolute; left: 0; top: 0;">
+	<input type="button" id="close" value="終了" style="width: 50%; position: absolute; left: 50%; top: 0;">
+	<input type="button" value="空" style="width: 100%; left: 0; bottom: 0; visibility: hidden;">
+	<output type="text" id="title"></output><br>
+	<span class="small">「#」「;」と表示させるには、それぞれ「##」「#;」と入力して下さい。</span><br>
+	<div class="scroll">
+		<table id="table" border="1" rules="all"></table>
+	</div>
+</body>
+</html>
