@@ -17,8 +17,6 @@ function onLoad(e){
 	cancelTag = document.getElementById("cancel");
 	tableTag = document.getElementById("table");
 
-	div2.style.display = "none";
-
 	file_reader = new FileReader();
 
 	file_reader.addEventListener("load", function(e){
@@ -35,18 +33,22 @@ function onLoad(e){
 		}
 		div1.style.display = "none";
 		div2.style.display = "";
+		fileTag.disabled = false;
 		clickable=true;
 	}, false);
 
 
 	file_reader.addEventListener("error", function(e){
 		alert("error");
+		fileTag.value = "";
+		fileTag.disabled = false;
 		clickable=true;
 	}, false);
 
 	fileTag.addEventListener("change", function(e){
 		if(!clickable) return;
 		clickable=false;
+		fileTag.disabled = true;
 
 		var files = fileTag.files;
 		if(files.length<1) return;
@@ -76,6 +78,7 @@ function onLoad(e){
 	cancelTag.addEventListener("click", function(e){
 		if(!clickable) return;
 		clickable=false;
+		fileTag.value = "";
 		div1.style.display = "";
 		div2.style.display = "none";
 		clickable=true;
